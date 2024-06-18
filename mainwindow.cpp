@@ -18,6 +18,7 @@ MainWindow::~MainWindow()
 bool MainWindow::Process(QString str_htm_file)
 {
     QFile f_in(str_htm_file);
+    QString str_filename = f_in.fileName();
     if (!f_in.open(QFile::Text | QIODevice::ReadOnly))
     {
         return false;
@@ -61,8 +62,18 @@ bool MainWindow::Process(QString str_htm_file)
         for (int i = 0; i < jArr.size(); i++)
         {
             QJsonValue jVal = jArr.at(i);
+            QString str_file = "";
+            if (!jVal.toObject()["STR_FILE"].isNull())
+            {
+                str_file = jVal.toObject()["STR_FILE"].toString();
+            }
             QString str_s = jVal.toObject()["STR_S"].toString();
             QString str_r = jVal.toObject()["STR_R"].toString();
+
+            if (!str_file.isEmpty() && str_filename.indexOf(str_file)<0)
+            {
+                continue;
+            }
 
             qDebug() << str_s;
             qDebug() << str_r;
