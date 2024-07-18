@@ -12,11 +12,69 @@
     "STR_R" : ".dz2 {font-family: 黑体;font-size: 16px;color: #000000;line-height: 25px;}"
 },
 {
+	"STR_S" : "width=100% border=0 cellpadding=25 cellspacing=8",
+    "STR_R" : "width=100% border=0 cellpadding=20 cellspacing=0"
+},
+{
+	"STR_S" : "table width=100% border=0",
+    "STR_R" : "table width=90% border=0 align=center"
+},
+{
+	"STR_S" : "<body>\n<table width=90% border=0 align=center cellpadding=20 cellspacing=0>\n  <tr>\n    <td>",
+    "STR_R" : "<body>\n<table width=90% border=0 align=center cellpadding=20 cellspacing=0>\n  <tr>\n    <td width=48%>"
+},
+{
+	"STR_S" : "</table>\n    </td>\n    <td>\n      <table width=90% ",
+    "STR_R" : "</table>\n    </td><td width=10px></td><td>\n      <table width=90% "
+},
+{
+	"STR_S" : "<td width=10px>&nbsp;</td>",
+    "STR_R" : "<td width=10px></td>"
+},
+{
+	"STR_S" : "<td>\n        </tr>",
+    "STR_R" : "</td>\n        </tr>"
+},
+{
+	"STR_S" : "<td nowrap colspan=3",
+    "STR_R" : "<td nowrap colspan=2"
+},
+{
+	"STR_S" : "<td align=right class=fs></td>\n          ",
+    "STR_R" : ""
+},
+{
+	"STR_S" : "<td align=center width=100 class=fs>",
+    "STR_R" : "<td align=right class=fs>"
+},
+{
+	"STR_S" : "<td align=center width=100 class=fs>",
+    "STR_R" : "<td align=right class=fs>"
+},
+{
+	"STR_S" : "<br>印刷品",
+    "STR_R" : "&nbsp;&nbsp;<br>印刷品"
+},
+{
 	"STR_S" : "收 </td>\n        </tr>\n        <tr>\n          <td colspan=3 align=right class=fjr>&nbsp;</td>",
     "STR_R" : "收 </td>\n        </tr>\n        <tr>\n          <td colspan=3 align=right class=fjr>《中国石化财会》编辑部</td>\n        </tr>\n        <tr>\n          <td colspan=3 align=right class=fjr>南京市玄武区傅厚岗1号富升大厦1008室</td>"
 },
 {
-	"STR_S" : "<td align=right class=fjr>&nbsp;</td>",
-    "STR_R" : "<td align=right class=fjr>邮编：210008</td>"
+	"STR_S" : "<td colspan=3",
+    "STR_R" : "<td colspan=2"
+},
+{
+	"STR_S" : "<td class=fjr>&nbsp;</td>\n          <td align=right class=fjr>&nbsp;</td>",
+    "STR_R" : "<td nowrap align=right class=fjr>电话：025-83354395&nbsp;邮编：210008</td>"
+},
+{
+	"STR_FILE": "本地",
+	"STR_S" : "<td>\n      <table width=90%",
+    "STR_R" : "<td background='bg_local.png'>\n      <table width=90%"
+},
+{
+	"STR_FILE": "本地",
+	"STR_S" : "<td width=48%>",
+    "STR_R" : "<td background='bg_local.png' width=48%>"
 }
 ]
